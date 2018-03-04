@@ -14,9 +14,9 @@ import android.graphics.Color;
 public class NotificationUtils extends ContextWrapper {
 
     private NotificationManager mManager;
-    public static final String CHANNEL_ID = "com.company.kendama.default";
+    public static final String CHANNEL_ID = "com.company.localpushfororeo.default";
     public static final String CHANNEL_NAME = "DEFAULT CHANNEL";
-    public static final String CHANNEL_ID2 = "com.company.kendama.high";
+    public static final String CHANNEL_ID2 = "com.company.localpushfororeo.high";
     public static final String CHANNEL_NAME2 = "HIGH CHANNEL";
 
     public NotificationUtils(Context base) {
