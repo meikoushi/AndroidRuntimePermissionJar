@@ -44,6 +44,6 @@ task makeJar(type: Copy) {
     from('build/intermediates/bundles/release/')
     into('release/')
     include('classes.jar')
-    rename('classes.jar', 'kendama.jar')
+    rename('classes.jar', 'localpushoreo.jar')
 }
 makeJar.dependsOn(clearJar, build)

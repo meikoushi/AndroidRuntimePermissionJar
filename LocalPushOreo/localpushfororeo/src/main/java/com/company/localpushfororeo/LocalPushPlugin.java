@@ -7,6 +7,7 @@ package com.company.localpushfororeo;
 import java.util.Calendar;
 
 import android.app.AlarmManager;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +15,12 @@ import android.content.Intent;
 import com.unity3d.player.UnityPlayer;
 
 public class LocalPushPlugin {
+
+    public static void ChannelInit(){
+        Context context = UnityPlayer.currentActivity.getApplicationContext();
+        NotificationUtils notificationUtils = new NotificationUtils(context);
+        notificationUtils.createChannels();
+    }
 
     public static void SendNotification( int notificationId, String message, long unixtime )
     {
